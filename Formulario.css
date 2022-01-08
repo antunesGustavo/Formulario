@@ -1,0 +1,161 @@
+/* Url do import da Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,400&display=swap');
+
+/* Todos os elementos da página */
+*{
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilização dos elementos da tag <body> */
+body{
+    background: #1B2029;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Estilização do elemento da tag <h1> */
+h1{
+    text-align: center;
+    color: #6b64da;
+}
+
+/* Estilização dos elementos com o ID "subtitulo" */
+#subtitulo {
+    color: #8880FE;
+    text-align: center;
+    font-weight: bold;
+} 
+
+/* Estilização da tag <form> */
+form {
+    flex-direction: column;
+    margin-top: 0.6rem;
+    margin-left: 20px;
+}
+
+/* Estilização da label da tag <form> */
+form label{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilização do span da tag <form> */
+ form label span{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    
+}
+
+/* Estilização do input da tag <form> */
+ form input{
+    background: #161923;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    color: rgb(206, 206, 206);
+    font-size: 1.2rem;
+    border: 1px solid #040b18;
+    border-radius: 11px;
+}
+
+/* Estilização do botão */
+.btn{
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    background: transparent;
+    border: 2px solid #6C63FF;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    margin-left: 37.5rem;
+    margin-top: 0.8rem;
+}
+
+/* Estilização do botão para dar o efeito de completa-lo */
+.btn::before{
+    content: ' ';
+    position: absolute;
+    background: #6C63FF;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .5s ease;
+}
+
+/* Estilização do botão para que o botão complete 100% de sua largura */
+.btn:hover::before{
+    width: 100%;
+}
+
+/* Estilização dos elementos da classe "campo" */
+.campo{
+    margin-top: -35%;
+    margin-left: 40%;
+    margin-bottom: 1em;
+    margin-bottom: 0.2em;
+}
+
+/* Estilização dos elementos da classe "campo" da tag <input> */
+.campo input{
+    margin-left: 14px;
+    margin-top: 10px;
+}
+
+/* Estilização dos elementos da classe "campos" */
+.campos{
+    margin-left: 73%;
+    margin-top: -3.5rem;
+}
+
+/* Estilização dos elementos da classe "campos" da tag <option> */
+.campos option{
+    background: #040b18;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Estilização dos elementos da classe "campo" da tag <select> */
+.campos select{
+    background: #040b18;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Estilização dos elementos da classe "check" */
+.check{
+    margin-left: 40%;
+    margin-top: 7rem;
+}
+
+/* Estilização dos elementos da classe "check" da tag <input> */
+.check input{
+    margin-left: 4px;   
+}
+
+/* Estilização dos elementos da classe "check" da tag <label> */
+.check label{
+    margin-left: 8px;
+}
+
+/* Estilização dos elementos da classe "message" */
+.message{
+    margin-left: 73%;
+    margin-top: -6.6rem;
+}
+
+/* Estilização dos elementos da classe "campo" da tag <textarea> */
+.message textarea{
+    border-radius: 11px;
+    margin-top: 7px;
+    font-size: 0.8rem;
+    padding:  0.5rem;
+    font-weight: bold;
+}

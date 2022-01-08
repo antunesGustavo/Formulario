@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Metadados -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="Formulario.css">
+
+        <!-- Título do Página (aparece na aba do navegador) -->
+        <title>Cadastro</title>
+    </head>
+        
+        <body>
+            <!-- Cabeçalho com Título e Subtítulo -->
+            <h1>Cadastro de Programadores</h1>
+            <p id="subtitulo">Complete com suas informações</p>
+        
+            <!-- Início do Forms -->
+              <form method="post">
+
+                <!-- Campo onde o Usuário coloca seu nome -->
+                <label for="Nome">
+                    <span>Nome Completo</span>
+                    <input type="text" id="nome" name="nome" required>   
+                </label> 
+                
+                <!-- Campo onde o Usuário coloca seu email -->
+                <label for="Email">
+                    <span>Email</span>
+                    <input type="text" id="email" name="email" required>   
+                </label> 
+
+                <!-- Campo onde o Usuário coloca sua data de nascimento-->
+                <label for="Data de Nasc">
+                    <span>Data de Nascimento</span>
+                    <input type="date" id="dataNasc" name="dataNasc" required>   
+                </label>
+
+                <!-- Campo onde o Usuário coloca seu celular -->
+                <label for="Celular">
+                    <span>Celular</span>
+                    <input type="number" id="celular" name="celular" required >   
+                </label>
+                
+                <!-- Botão que envia o Formulário -->
+                <button class="btn"> Concluído </button>
+
+            </form>   
+
+            <!-- Campo com 3 opções de botões selecionáveis com (radio button) -->
+            <div class="campo">
+                <label><strong>De qual lado da aplicação você desenvolve?</strong></label> <br>
+                
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked> Front-end
+                </label>
+
+                <label>
+                    <input type="radio" name="devweb" value="backend"> Back-end
+                </label>
+
+                <label>
+                    <input type="radio" name="devweb" value="fullstack"> Fullstack
+                </label>
+            </div>
+            
+            <!-- Campo de senioridade com 3 opções para escolha de apenas uma (select option) -->
+            <div class="campos"> 
+                <label for="senioridade"><strong>Senioridade</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Júnior</option>
+                  <option>Pleno</option>
+                  <option>Sênior</option>
+                </select>
+            </div>
+
+            
+                <!-- Campo para escolha de 1 ou mais tecnologias para marcar (checkbox) -->
+                <div class="check">
+                    <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                    <label for="tecnologia1"> HTML</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                    <label for="tecnologia2"> CSS</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                    <label for="tecnologia3"> JavaScript</label> 
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                    <label for="tecnologia4"> PHP</label> <br>
+                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                    <label for="tecnologia5"> C#</label>
+                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                    <label for="tecnologia6"> Python</label>
+                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                    <label for="tecnologia7"> Java</label>
+                </div>
+
+                <!-- Caixa de texto -->
+                <div class="message">
+                    <label for="experiencia"><strong>Conte um pouco mais da sua experiência:</strong> </label>
+                    <textarea rows="6" style="width: 25em" id="experiencia" name="experiencia"></textarea>
+                </div>
+
+        </body>
+</html>
